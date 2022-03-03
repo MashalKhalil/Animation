@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@drawable/backg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="268dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="ANIMATIONS:"
+        android:textColor="#423A3A"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="107dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="248dp"
+        android:background="@drawable/gradient"
+        android:onClick="demo1"
+        android:text="BLINK"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b2"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="118dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/gradient1"
+        android:onClick="demo2"
+        android:text="ROTATE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/b5"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.677" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="107dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="248dp"
+        android:background="@drawable/gradient2"
+        android:onClick="demo3"
+        android:text="FADE IN"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintStart_toEndOf="@+id/b2" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="107dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/gradient2"
+        android:onClick="demo4"
+        android:text="MOVE UP"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b1"
+        app:layout_constraintVertical_bias="0.763" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="107dp"
+        android:layout_height="55dp"
+        android:background="@drawable/gradient1"
+        android:onClick="demo5"
+        android:text="SLIDE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b6"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/b4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="107dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/gradient"
+        android:onClick="demo6"
+        android:text="ZOOM IN"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toEndOf="@+id/b4"
+        app:layout_constraintTop_toBottomOf="@+id/b3"
+        app:layout_constraintVertical_bias="0.745" />
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="107dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="152dp"
+        android:background="@drawable/gradient"
+        android:onClick="demo7"
+        android:text="ZOOM OUT"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b9"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b4"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="107dp"
+        android:layout_height="55dp"
+        android:background="@drawable/gradient1"
+        android:onClick="demo8"
+        android:text="FADE OUT"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b9"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toEndOf="@+id/b7"
+        app:layout_constraintTop_toBottomOf="@+id/b5" />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="107dp"
+        android:layout_height="55dp"
+        android:background="@drawable/gradient2"
+        android:onClick="demo9"
+        android:text="MOVE DOWN"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b6" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="387dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:text="MASHAL "
+        android:textColor="#E2FDFDFD"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="390dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="257dp"
+        android:layout_marginBottom="344dp"
+        android:background="#7950BDA4"
+        android:gravity="center"
+        android:text="Click On Buttons for Animation:"
+        android:textColor="#E1191B1B"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/t1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/t1"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
